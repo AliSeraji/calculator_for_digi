@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/buy_price_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/textInputLabel"
+            android:hint="@string/buy_price"
+            android:gravity="start|center_vertical"
+            android:layout_margin="10dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/buy_price_input"
+                android:inputType="numberSigned"
+                style="@style/textInputStyle"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopEnd="40dp"
+                app:boxStrokeWidth="10dp"
+                app:boxStrokeColor="@color/blue"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sell_price_layout"
+            app:layout_constraintTop_toBottomOf="@id/buy_price_layout"
+            style="@style/textInputLabel"
+            android:hint="@string/sell_price"
+            android:gravity="start|center_vertical"
+            android:layout_margin="10dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/sell_price_input"
+                android:inputType="numberSigned"
+                style="@style/textInputStyle"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/percentage_of_commission_layout"
+            app:layout_constraintTop_toBottomOf="@id/sell_price_layout"
+            style="@style/textInputLabel"
+            android:hint="@string/percentage_of_commission"
+            android:layout_margin="10dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/percentage_of_commission_layout_input"
+                android:inputType="numberSigned"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                style="@style/textInputStyle"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.dx.dxloadingbutton.lib.LoadingButton
+            app:layout_constraintTop_toBottomOf="@id/percentage_of_commission_layout"
+            android:layout_width="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:foregroundGravity="center"
+            style="@style/calculateButtonStyle"
+            app:lb_btnText="@string/calculate"
+            android:id="@+id/calculate"
+            app:lb_resetAfterFailed="true"
+            android:layout_gravity="center"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

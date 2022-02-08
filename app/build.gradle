@@ -1,0 +1,106 @@
+plugins {
+    id 'com.android.application'
+
+    id 'kotlin-android'
+
+    id 'kotlin-kapt'
+
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.2"
+
+
+    defaultConfig {
+        applicationId "com.example.dgcalculator"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures{
+        //noinspection DataBindingWithoutKapt
+        dataBinding  true // for data binding
+        viewBinding  true // for view binding
+    }
+
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+}
+
+dependencies {
+
+
+    //ElasticView
+    implementation 'com.github.armcha:ElasticView:0.2.0'
+    //elastic views
+    implementation "com.github.skydoves:elasticviews:2.1.0"
+
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    def room_version = "2.2.6"
+
+
+    //room
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-runtime:$room_version"
+
+    // Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+
+
+
+    //coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+
+    //lifecycle scope
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+
+    //live data
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
+
+    //recycler view
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    //bottom navbar
+    //implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.6'
+    implementation 'androidx.fragment:fragment-ktx:1.3.2'
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+
+    //progress button
+    implementation 'com.github.StevenDXC:DxLoadingButton:2.4'
+    //loading animations
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    //implementation 'com.github.Marvel999:Android-Loading-Animation:1.0.0'
+
+    //animated input text
+    //implementation "ss.anoop:awesome-textinput-layout:${latest-version}"
+}

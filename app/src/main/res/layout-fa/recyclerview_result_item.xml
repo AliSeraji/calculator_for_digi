@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/processing_and_sending"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/processing_and_sending"
+            style="@style/textInputLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/processing_and_sending"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/processing_and_sending_res"
+            style="@style/textInputStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/processing_and_sending_res"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/commission"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/commission"
+            style="@style/textInputLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/commission"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/commission_res"
+            style="@style/textInputStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/commission_res"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/final_deductions"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/final_deductions"
+            style="@style/textInputLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/final_deductions"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/final_deductions_res"
+            style="@style/textInputStyle"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/final_deductions_res"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/net_profit"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/net_profit"
+            style="@style/textInputLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/net_profit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/net_profit_res"
+            style="@style/textInputStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/net_profit_res"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/net_received"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/net_received"
+            style="@style/textInputLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/net_received"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/net_received_res"
+            style="@style/textInputStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/net_received_res"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/interest_rates"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/interest_rates"
+            style="@style/textInputLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/interest_rates"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/interest_rates_res"
+            style="@style/textInputStyle"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

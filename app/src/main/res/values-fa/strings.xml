@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">محاسبه کننده دیجیکالا</string>
+    <string name="buy_price">قیمت خرید</string>
+    <string name="sell_price">قیمت فروش</string>
+    <string name="percentage_of_commission">درصد کمیسیون</string>
+    <string name="processing_and_sending">پردازش و ارسال</string>
+    <string name="commission">کمیسون</string>
+    <string name="final_deductions">کسورات نهایی</string>
+    <string name="net_profit">سود خالص</string>
+    <string name="net_received">خالص دریافتی</string>
+    <string name="interest_rates">درصد سود</string>
+    <string name="calculate">محاسبه</string>
+    <string name="toast_success">محاسبات انجام شد!</string>
+    <string name="toast_failure">خطا</string>
+</resources>
